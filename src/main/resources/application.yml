@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://127.0.0.1:3306/test?useSSL=FALSE&useUnicode=TRUE&characterEncoding=UTF8&useLegacyDatetimeCode=false&useAffectedRows=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+
+server:
+  port: 8080
+  servlet:
+    context-path: /test
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
